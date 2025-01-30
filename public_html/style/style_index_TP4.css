@@ -6,4 +6,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Created on : 30 janv. 2025, 13:29:10
     Author     : UTI010
 */
-
+.image-style {
+            width: 300px; /* Largeur */
+            height: auto; /* Hauteur automatique */
+            border-radius: 10px; /* Coins arrondis */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre */
+        }
