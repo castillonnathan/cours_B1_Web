@@ -29,7 +29,7 @@ body {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espace sous l'en-tête */
 }
 
 /* Images */
@@ -44,7 +44,7 @@ body {
     height: 60px;
     object-fit: contain;
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Ajout d'espace sous les images */
 }
 
 /* Encadré pour la description */
@@ -53,7 +53,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espacement sous la description */
 }
 
 /* Encadré pour les listes */
@@ -61,7 +61,7 @@ body {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espacement sous chaque liste */
 }
 
 /* Style des listes */
