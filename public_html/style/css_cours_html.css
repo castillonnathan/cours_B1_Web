@@ -30,12 +30,17 @@ body {
             margin: 10px 0;
         }
         .box {
-            border: 2px solid black; /* Ajoute une bordure noire */
-            padding: 10px; /* Ajoute de l'espace à l'intérieur du rectangle */
-            margin-bottom: 10px; /* Ajoute un espace entre les blocs */
-            border-radius: 5px; /* Arrondit légèrement les coins (optionnel) */
-            background-color: #f9f9f9; /* Ajoute un léger fond gris pour améliorer la visibilité */
-}
+            border: 2px solid black; /* Bordure noire */
+            padding: 15px; /* Espacement interne */
+            margin: 15px 0; /* Espacement externe (haut et bas) */
+            border-radius: 5px; /* Coins légèrement arrondis */
+            background-color: #f9f9f9; /* Fond gris clair */
+            width: fit-content; /* Adapte la largeur au contenu */
+        }
+
+        .box-cours {
+            width: 300px; /* Définit une largeur pour un affichage clair */
+        }
         ul {
             list-style-type: none;
             padding: 0;
