@@ -39,12 +39,7 @@ body {
     border: none;
 }
 
-/* Espace entre les blocs */
-.spacing {
-    margin-bottom: 30px; /* Espacement entre les sections de contenu */
-}
-
-/* Encadré pour les listes */
+/* Espacement entre les sections "Liste des cours" et "TP" */
 .list {
     border: 1px solid #ccc;
     padding: 10px;
