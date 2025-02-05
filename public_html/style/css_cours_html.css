@@ -42,9 +42,8 @@ body {
 /* Espacement entre les sections "Liste des cours" et "TP" */
 .list {
     border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px; /* Espacement sous chaque liste à zéro */
+      padding: 10px;
+      border-radius: 5px;
 }
 
 
