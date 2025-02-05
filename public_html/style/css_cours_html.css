@@ -39,19 +39,19 @@ body {
     border: none;
 }
 
-/* Conteneur pour les listes */
-.lists-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Ajoute un espacement entre les sections */
-}
-
-/* Espacement entre les sections "Liste des cours" et "TP" */
-.list {
+/* Espacement pour Liste des cours */
+.list-cours {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 0; /* Enlever l'espacement sous chaque liste pour utiliser le gap */
+    margin-bottom: 20px; /* Ajoute un espacement sous cette liste */
+}
+
+/* Espacement pour TP */
+.list-tp {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /* Style des listes */
