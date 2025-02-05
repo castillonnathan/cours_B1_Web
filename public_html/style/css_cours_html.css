@@ -8,45 +8,71 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 */
 body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
-            border: 1px solid #ccc;
+            background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-weight: bold;
+            margin-bottom: 20px;
         }
-        .image-placeholder {
-            width: 74px;
-            height: 60px;
-            border: 1px solid #000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 10px 0;
+
+        img {
+            display: block;
+            max-width: 100px;
+            margin: 10px auto;
         }
+
+        /* Style pour encadrer les listes */
         .box {
-            border: 1px solid #ccc;
+            border: 2px solid #007bff;
+            background: #e9f5ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .box strong {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+
+        /* Style des listes */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
             padding: 10px;
+            margin: 5px 0;
+            background: white;
+            border: 1px solid #ccc;
             border-radius: 5px;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+        ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
         }
-        li {
-            margin: 5px 0;
+
+        ul li a:hover {
+            text-decoration: underline;
         }
-        .highlight {
-            border: 1px solid blue;
-            padding: 2px;
-        }
-        
