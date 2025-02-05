@@ -22,6 +22,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: white;
+    margin-bottom: 30px; /* Marge supplémentaire pour le conteneur */
 }
 
 /* En-tête */
@@ -29,13 +30,13 @@ body {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 30px; /* Espace sous l'en-tête pour mieux espacer */
+    margin-bottom: 30px; /* Espacement sous l'en-tête */
 }
 
 /* Images */
 .images {
-    display: block; /* Aligne l'image à gauche */
-    margin-bottom: 30px; /* Ajoute un espace sous l'image */
+    display: block; /* Alignement à gauche */
+    margin-bottom: 30px; /* Espacement sous l'image */
 }
 
 .images img {
@@ -43,7 +44,7 @@ body {
     height: 60px;
     object-fit: contain;
     border: none;
-    margin-right: 20px; /* Marge à droite pour espacer des éléments suivants */
+    margin-right: 20px; /* Marge à droite pour espacer l'image des éléments suivants */
 }
 
 /* Encadré pour la description */
@@ -52,7 +53,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    margin-bottom: 30px; /* Augmenter l'espace sous la description */
+    margin-bottom: 30px; /* Espacement sous la description */
 }
 
 /* Encadré pour les listes */
@@ -60,7 +61,7 @@ body {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 30px; /* Augmenter l'espace sous chaque liste */
+    margin-bottom: 30px; /* Espacement sous chaque liste */
 }
 
 /* Style des listes */
@@ -72,7 +73,7 @@ body {
 
 .list ul li {
     padding: 8px;
-    margin: 8px 0; /* Plus de marge pour espacer les éléments de la liste */
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
     background: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
