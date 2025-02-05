@@ -7,72 +7,85 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : hosay
 */
 body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+/* Conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+/* En-tête */
+.header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
-        img {
-            display: block;
-            max-width: 100px;
-            margin: 10px auto;
-        }
+/* Images */
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-        /* Style pour encadrer les listes */
-        .box {
-            border: 2px solid #007bff;
-            background: #e9f5ff;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
+.images img {
+    width: 74px;
+    height: 60px;
+    object-fit: contain;
+    border: none;
+    margin-bottom: 10px;
+}
 
-        .box strong {
-            display: block;
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: #0056b3;
-        }
+/* Encadré pour la description */
+.description {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-        /* Style des listes */
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+/* Encadré pour les listes */
+.list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
 
-        ul li {
-            padding: 10px;
-            margin: 5px 0;
-            background: white;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+/* Style des listes */
+.list ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
 
-        ul li a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-        }
+.list ul li {
+    padding: 8px;
+    margin: 5px 0;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
 
-        ul li a:hover {
-            text-decoration: underline;
-        }
+/* Style des liens */
+.list ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.list ul li a:hover {
+    text-decoration: underline;
+}
