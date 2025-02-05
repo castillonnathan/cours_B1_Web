@@ -28,7 +28,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     }
     .images {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 20px; /* Ajustez cette valeur selon l'espacement désiré */
   }
 
