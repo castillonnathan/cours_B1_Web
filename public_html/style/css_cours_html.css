@@ -1,3 +1,11 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 4 févr. 2025, 12:23:39
+    Author     : UTI010
+*/
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -5,7 +13,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Conteneur principal */
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -13,23 +20,19 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: white;
-    margin-bottom: 30px; /* Espacement global */
 }
 
-/* En-tête */
 .header {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 30px; /* Espacement sous l'en-tête */
+    margin-bottom: 20px;
 }
 
-/* Images alignées à gauche */
 .images {
-    margin-bottom: 30px; /* Espace sous l'image */
-    float: left; /* Aligne l'image à gauche */
-    margin-right: 20px; /* Espace entre l'image et les autres éléments */
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Ajustez cette valeur selon l'espacement désiré */
 }
 
 .images img {
@@ -37,32 +40,31 @@ body {
     height: 60px;
     object-fit: contain;
     border: none;
+    margin-bottom: 10px;
 }
 
-/* Liste des cours */
-.list-cours {
+.description {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 20px; /* Ajoute un espacement sous cette liste */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Liste des TP */
-.list-tp {
+.list {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 20px; /* Ajoute un espacement sous cette liste */
+    margin-bottom: 20px; /* Ajoute un espacement sous chaque liste */
 }
 
-/* Style des listes */
-ul {
+.list ul {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
 }
 
-ul li {
+.list ul li {
     padding: 8px;
     margin-bottom: 10px; /* Espacement entre les éléments de la liste */
     background: #f9f9f9;
@@ -70,13 +72,12 @@ ul li {
     border-radius: 5px;
 }
 
-/* Style des liens */
-ul li a {
+.list ul li a {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
 }
 
-ul li a:hover {
+.list ul li a:hover {
     text-decoration: underline;
 }
