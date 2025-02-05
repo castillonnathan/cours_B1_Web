@@ -30,10 +30,12 @@ body {
             margin: 10px 0;
         }
         .box {
-            border: 1px solid #000;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
+            border: 2px solid black; /* Ajoute une bordure noire */
+            padding: 10px; /* Ajoute de l'espace à l'intérieur du rectangle */
+            margin-bottom: 10px; /* Ajoute un espace entre les blocs */
+            border-radius: 5px; /* Arrondit légèrement les coins (optionnel) */
+            background-color: #f9f9f9; /* Ajoute un léger fond gris pour améliorer la visibilité */
+}
         ul {
             list-style-type: none;
             padding: 0;

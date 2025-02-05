@@ -32,10 +32,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     gap: 20px; /* Ajustez cette valeur selon l'espacement désiré */
   }
 
-  .images1 {
-      display: flex;
-      justify-content: center;
-  }
   .images img {
     width: 74px;
     height: 60px;
