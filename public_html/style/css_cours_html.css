@@ -32,10 +32,43 @@ body {
     margin-right: 20px; /* Espace entre l'image et les autres éléments */
 }
 
+.images img {
+    width: 74px;
+    height: 60px;
+    object-fit: contain;
+    border: none;
+}
+
 /* Espacement entre les sections "Liste des cours" et "TP" */
 .list {
     border: 1px solid #ccc;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Ajoute un espacement sous chaque liste */
+}
+
+/* Style des listes */
+.list ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list ul li {
+    padding: 8px;
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style des liens */
+.list ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.list ul li a:hover {
+    text-decoration: underline;
 }
