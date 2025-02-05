@@ -33,12 +33,9 @@ body {
             margin: 10px 0;
         }
         .box {
-            border: 2px solid black; /* Bordure noire */
-            padding: 15px; /* Espacement interne */
-            margin: 15px 0; /* Espacement externe (haut et bas) */
-            border-radius: 5px; /* Coins légèrement arrondis */
-            background-color: #f9f9f9; /* Fond gris clair */
-            width: fit-content; /* Adapte la largeur au contenu */
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         ul {
