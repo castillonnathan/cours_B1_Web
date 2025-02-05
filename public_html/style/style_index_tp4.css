@@ -51,6 +51,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
       border: 1px solid #ccc;
       padding: 10px;
       border-radius: 5px;
+      text-align: left;
+      margin-bottom: 10px;
     }
     .list ol {
       margin: 0;
