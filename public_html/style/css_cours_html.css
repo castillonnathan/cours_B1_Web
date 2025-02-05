@@ -44,7 +44,7 @@ body {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 0; /* Espacement sous chaque liste à zéro */
+    margin-bottom: 20px; /* Espacement sous chaque liste à zéro */
 }
 
 
