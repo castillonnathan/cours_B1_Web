@@ -61,7 +61,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     
     .button-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
   .button-container button {
     margin-right: 10px; /* Pour ajouter un espace entre les boutons */
