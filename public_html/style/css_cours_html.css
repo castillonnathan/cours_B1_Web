@@ -7,11 +7,16 @@ body {
 
 /* Conteneur principal */
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Espacement entre les sections */
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin-bottom: 30px; /* Espacement global */
 }
-      
+
 /* En-tête */
 .header {
     text-align: center;
@@ -34,14 +39,21 @@ body {
     border: none;
 }
 
+/* Conteneur pour les listes */
+.lists-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Ajoute un espacement entre les sections */
+}
+
 /* Espacement entre les sections "Liste des cours" et "TP" */
 .list {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 0; 
+    margin-bottom: 0; /* Enlever l'espacement sous chaque liste pour utiliser le gap */
 }
-    
+
 /* Style des listes */
 .list ul {
     list-style-type: none;
