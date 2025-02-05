@@ -7,16 +7,14 @@ body {
 
 /* Conteneur principal */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: white;
-    margin-bottom: 30px; /* Espacement global */
+      max-width: 800px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+      
 /* En-tête */
 .header {
     text-align: center;
