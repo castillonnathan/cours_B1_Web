@@ -10,9 +10,12 @@ body {
             font-family: Arial, sans-serif;
         }
         .container {
-            width: 400px;
-            border: 1px solid #000;
-            padding: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .header {
             display: flex;
@@ -38,9 +41,6 @@ body {
             width: fit-content; /* Adapte la largeur au contenu */
         }
 
-        .box-cours {
-            width: 300px; /* Définit une largeur pour un affichage clair */
-        }
         ul {
             list-style-type: none;
             padding: 0;
@@ -52,3 +52,4 @@ body {
             border: 1px solid blue;
             padding: 2px;
         }
+        
