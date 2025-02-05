@@ -41,11 +41,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
   }
     
     .description {
-      border: 1px solid #ccc;
-      padding: 10px;
-      border-radius: 5px;
+      border: 2px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
       text-align: left;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     .list {
       border: 1px solid #ccc;
