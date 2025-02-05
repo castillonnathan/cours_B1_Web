@@ -39,7 +39,7 @@ body {
     border: none;
 }
 
-/* Espacement pour Liste des cours */
+/* Liste des cours */
 .list-cours {
     border: 1px solid #ccc;
     padding: 10px;
@@ -47,21 +47,22 @@ body {
     margin-bottom: 20px; /* Ajoute un espacement sous cette liste */
 }
 
-/* Espacement pour TP */
+/* Liste des TP */
 .list-tp {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
+    margin-bottom: 20px; /* Ajoute un espacement sous cette liste */
 }
 
 /* Style des listes */
-.list ul {
+ul {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
 }
 
-.list ul li {
+ul li {
     padding: 8px;
     margin-bottom: 10px; /* Espacement entre les éléments de la liste */
     background: #f9f9f9;
@@ -70,12 +71,12 @@ body {
 }
 
 /* Style des liens */
-.list ul li a {
+ul li a {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
 }
 
-.list ul li a:hover {
+ul li a:hover {
     text-decoration: underline;
 }
