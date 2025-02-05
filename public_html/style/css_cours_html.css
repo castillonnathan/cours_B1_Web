@@ -39,13 +39,9 @@ body {
     border: none;
 }
 
-/* Encadré pour la description */
-.description {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 30px; /* Espacement sous la description */
+/* Espace entre les blocs */
+.spacing {
+    margin-bottom: 30px; /* Espacement entre les sections de contenu */
 }
 
 /* Encadré pour les listes */
