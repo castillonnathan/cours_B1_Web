@@ -23,7 +23,7 @@
             position: relative;
             perspective: 1000px;
         }
-        .card-inner {
+        .card .card-inner {
             width: 100%;
             height: 100%;
             position: relative;
@@ -33,27 +33,24 @@
         .card input {
             display: none;
         }
-        .card label {
+        .card label, .card img {
             display: block;
             width: 100%;
             height: 100%;
-            position: absolute;
             cursor: pointer;
-            transform-style: preserve-3d;
-        }
-        .card-front, .card-back {
             position: absolute;
-            width: 100%;
-            height: 100%;
+            top: 0;
+            left: 0;
             backface-visibility: hidden;
+            object-fit: cover;
         }
-        .card-front {
+        .card .card-front {
             background: #333;
         }
-        .card-back {
+        .card .card-back {
             transform: rotateY(180deg);
         }
-        .card input:checked + .card-inner {
+        .card input:checked ~ .card-inner {
             transform: rotateY(180deg);
         }
     </style>
@@ -64,28 +61,28 @@
             <input type="checkbox" id="card1">
             <div class="card-inner">
                 <label for="card1" class="card-front"></label>
-                <label for="card1" class="card-back"><img src="../../image/TP4/logo_html.png" alt="Image 1"></label>
+                <img src="image1.jpg" alt="Image 1" class="card-back">
             </div>
         </div>
         <div class="card">
             <input type="checkbox" id="card2">
             <div class="card-inner">
                 <label for="card2" class="card-front"></label>
-                <label for="card2" class="card-back"><img src="../../image/TP4/logo_html.png" alt="Image 1"></label>
+                <img src="image1.jpg" alt="Image 1" class="card-back">
             </div>
         </div>
         <div class="card">
             <input type="checkbox" id="card3">
             <div class="card-inner">
                 <label for="card3" class="card-front"></label>
-                <label for="card3" class="card-back"><img src="../../image/TP4/logo_css.jpg" alt="Image 2"></label>
+                <img src="image2.jpg" alt="Image 2" class="card-back">
             </div>
         </div>
         <div class="card">
             <input type="checkbox" id="card4">
             <div class="card-inner">
                 <label for="card4" class="card-front"></label>
-                <label for="card4" class="card-back"><img src="../../image/TP4/logo_css.jpg" alt="Image 2"></label>
+                <img src="image2.jpg" alt="Image 2" class="card-back">
             </div>
         </div>
     </div>
