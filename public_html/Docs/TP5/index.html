@@ -56,6 +56,9 @@
         .card input:checked ~ .card-inner {
             transform: rotateY(180deg);
         }
+        .card input:not(:checked) ~ .card-inner {
+            transform: rotateY(0deg);
+        }
     </style>
 </head>
 <body>
@@ -78,14 +81,14 @@
             <input type="checkbox" id="card3">
             <div class="card-inner">
                 <label for="card3" class="card-front"></label>
-                <img src="../../image/TP4/logo_js.png" class="card-back">
+                <img src="../../image/TP4/logo_js.png" alt="Image 2" class="card-back">
             </div>
         </div>
         <div class="card">
             <input type="checkbox" id="card4">
             <div class="card-inner">
                 <label for="card4" class="card-front"></label>
-                <img src="../../image/TP4/logo_js.png" class="card-back">
+                <img src="../../image/TP4/logo_js.png" alt="Image 2" class="card-back">
             </div>
         </div>
     </div>
