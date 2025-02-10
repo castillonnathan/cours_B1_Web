@@ -25,10 +25,10 @@ h1 {
 
 .game-board {
     display: grid;
-    grid-template-columns: repeat(4, 150px);
+    grid-template-columns: repeat(5, 150px);
     grid-gap: 10px;
     margin: 20px auto;
-    width: 650px;
+    width: 800px;
     justify-items: center;
 }
 
@@ -70,4 +70,3 @@ h1 {
     background-position: center;
     transform: rotateY(180deg);
 }
-
