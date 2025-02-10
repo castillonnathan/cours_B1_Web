@@ -1,103 +1,79 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
-<html>
-    <head>
-        <title>Jeu du Mémory</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/css_TP5/css_index_TP5.css">
-    </head>
-    <body>
-    <h1>Jeu du Mémory 5x5</h1>
-    <div class="game-board">
-        <!-- Ligne 1 -->
-        <label class="card">
-            <input type="checkbox">
-            <div class="card-inner">
-                <div class="card-front"></div>
-                <div class="card-back" style="background-image: url('img1.jpg');"></div>
-            </div>
-        </label>
-        <label class="card">
-            <input type="checkbox">
-            <div class="card-inner">
-                <div class="card-front"></div>
-                <div class="card-back" style="background-image: url('img2.jpg');"></div>
-            </div>
-        </label>
-        <label class="card">
-            <input type="checkbox">
-            <div class="card-inner">
-                <div class="card-front"></div>
-                <div class="card-back" style="background-image: url('img3.jpg');"></div>
-            </div>
-        </label>
-        <label class="card">
-            <input type="checkbox">
-            <div class="card-inner">
-                <div class="card-front"></div>
-                <div class="card-back" style="background-image: url('img4.jpg');"></div>
-            </div>
-        </label>
-        <label class="card">
-            <input type="checkbox">
-            <div class="card-inner">
-                <div class="card-front"></div>
-                <div class="card-back" style="background-image: url('img5.jpg');"></div>
-            </div>
-        </label>
-
-        <!-- Ligne 2 -->
-        <label class="card">
-            <input type="checkbox">
-            <div class="card-inner">
-                <div class="card-front"></div>
-                <div class="card-back" style="background-image: url('img1.jpg');"></div>
-            </div>
-        </label>
-        <label class="card">
-            <input type="checkbox">
-            <div class="card-inner">
-                <div class="card-front"></div>
-                <div class="card-back" style="background-image: url('img2.jpg');"></div>
-            </div>
-        </label>
-        <label class="card">
-            <input type="checkbox">
-            <div class="card-inner">
-                <div class="card-front"></div>
-                <div class="card-back" style="background-image: url('img3.jpg');"></div>
-            </div>
-        </label>
-        <label class="card">
-            <input type="checkbox">
-            <div class="card-inner">
-                <div class="card-front"></div>
-                <div class="card-back" style="background-image: url('img4.jpg');"></div>
-            </div>
-        </label>
-        <label class="card">
-            <input type="checkbox">
-            <div class="card-inner">
-                <div class="card-front"></div>
-                <div class="card-back" style="background-image: url('img5.jpg');"></div>
-            </div>
-        </label>
-
-        <!-- Autres lignes -->
-        <!-- Répéter les mêmes cartes pour compléter la grille -->
-        <!-- Exemple pour une ligne supplémentaire -->
-        <label class="card">
-            <input type="checkbox">
-            <div class="card-inner">
-                <div class="card-front"></div>
-                <div class="card-back" style="background-image: url('image/TP4/logo_css.jpg');"></div>
-            </div>
-        </label>
-        <!-- Ajoute ici des cartes supplémentaires -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Memory</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .memory-game {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 10px;
+        }
+        .card {
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+        .card input {
+            display: none;
+        }
+        .card label {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: #333;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .card input:checked + label {
+            background: none;
+        }
+        .card input:checked + label + img {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="memory-game">
+        <div class="card">
+            <input type="checkbox" id="card1">
+            <label for="card1"></label>
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="card">
+            <input type="checkbox" id="card2">
+            <label for="card2"></label>
+            <img src="../../logo_css.jpg" alt="Image 1">
+        </div>
+        <div class="card">
+            <input type="checkbox" id="card3">
+            <label for="card3"></label>
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="card">
+            <input type="checkbox" id="card4">
+            <label for="card4"></label>
+            <img src="image2.jpg" alt="Image 2">
+        </div>
     </div>
 </body>
 </html>
