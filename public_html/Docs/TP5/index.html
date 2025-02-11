@@ -13,19 +13,19 @@
             background-color: #f4f4f4;
         }
         .memory-game {
-            display: flex;
+            display: grid;
             grid-template-columns: repeat(4, 100px);
             grid-gap: 10px;
         }
         .card {
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
             position: relative;
             perspective: 50px;
         }
         .card-inner {
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height: 100%;
             position: relative;
             transform-style: preserve-3d;
             transition: transform 0.5s;
@@ -53,6 +53,11 @@
         .card-back {
             transform: rotateY(180deg);
         }
+        .card-back img {
+             width: 100%;
+             height: 100%;
+             object-fit: cover; /* Permet d'adapter l'image sans distorsion */
+}
         .card input:checked + .card-inner {
             transform: rotateY(180deg);
         }
