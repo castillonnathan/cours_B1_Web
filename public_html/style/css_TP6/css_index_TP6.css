@@ -6,4 +6,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Created on : 13 févr. 2025, 13:21:08
     Author     : UTI010
 */
-
+.button-container {
+             display: flex;
+             justify-content: flex-end;
+        }     

@@ -70,3 +70,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
         .card input:checked + .card-inner {
             transform: rotateY(180deg);
         }
+        .button-container {
+             display: flex;
+             justify-content: flex-end;
+        }     

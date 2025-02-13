@@ -11,14 +11,24 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <link rel="stylesheet" href="../../style/TP6/css_index_TP6.css"/>
     </head>
     <body>
-        <h1>Bienvenue sur le TP6 !</h1>
+        <h1>Bienvenue sur le TP6 !</h1><div class="button-container"><button onclick="window.location.href='../../index.html'">Retour</button><button onclick="window.location.href='../../index.html'">Accueil</button></div>
         <h2>Exercice 1 : tableau</h2>
         <table>
             <tbody>
                 <tr>
-                    <th>Vacances</th>
-                    <th>Vacances 1</th>
-                    <th>Vacances 2</th>
+                    <th rowspan="2">Vacances</th>
+                    <th>Zone A</th>
+                    <th>Zone B</th>
+                    <th>Zone C</th>
+                </tr>
+                <tr>
+                    <th>Prérentré des enseignants</th>
+                    <th>Académies : Besançon, Bordeaux, Clermont-Ferrand, Dijon, Grenoble, Limoges, Lyon, Poitiers</th>
+                    <th>Académies : Aix-Marseille, Amiens, Can, Lille, Nancy-Metz, Nantes, Nice, Orléans-Tours, Reims, Rennes, Rouen, Strasbourg</th>
+                    <th>Académies : Créteil, Montpellier, Paris, Toulouse, Versailles</th>
+                </tr>
+                <tr>
+                    <th colspan="3">Reprise des cours : Vendredi 1er septembre 2017</th>
                 </tr>
             </tbody>
         </table>
