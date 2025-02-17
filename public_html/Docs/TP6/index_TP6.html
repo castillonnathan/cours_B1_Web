@@ -8,18 +8,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <title>Tp6 Les Tableaux</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="../../style/css_TP6/css_index_TP6.css">
     </head>
     <header>
-        <h1><center>Tp6 Les Tableaux</center></h1>
-     <center><button onclick="window.location.href='../index.html'">Acceuil</button></center> 
+        <h1><center>Bienvenue sur le TP 6 : Les Tableaux</center></h1>
+     <center><button onclick="window.location.href='../../index.html'">Acceuil</button></center> 
      <br>
-     <center><button onclick="window.history.back()">Retour</button></center>
+     <center><button onclick="window.location.href='../../index.html'">Retour</button></center>
 </header> 
-    
-    <link rel="stylesheet" href="../../style/css_TP6/css_index_TP6.css">
-    
     <body>
-    <h1>Exercice 1 : Tableau simple</h1>
+    <h1>Tableau simple</h1>
       <table>
         <thead>
             <tr>
@@ -31,13 +29,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         </thead>
         <tbody>
             <tr>
-                <th rowspan="1"class="Vacances"></th>
+                <th rowspan="2"class="Vacances">Prérentrée des enseignants</th>
                 <td class="zoneA">Académies de Besançon, Bordeaux, Clermont-Ferrand, Dijon, Grenoble, Limoges, Lyon, Poitiers</td>
                 <td class="zoneB">Académies d'Aix-Marseille, Amiens, Lille, Nancy-Metz, Nantes, Nice, Normandie, Orléans-Tours, Reims, Rennes, Strasbourg</td>
                 <td class="zoneC">Académies de Créteil, Montpellier, Paris, Toulouse, Versailles</td>
             </tr>
             <tr>
-                <th class="Vacances">Prérentrée des enseignants</th>
                 <td colspan="3">Reprise des cours : vendredi 1er septembre 2017 </td>
             </tr>
             <tr>
@@ -71,7 +68,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         </tbody>
     </table>
 
-    <h1>Exercice 2 : Langages de script</h1>
+    <h1>Langages de script</h1>
     <table>
     <caption>Tableau des langages de script</caption>
     <tr>
@@ -83,57 +80,57 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <th>Exemple de code</th>
     </tr>
     <tr>
-        <td><a href="Image/PHP-logo.svg.png" target="_blank"><img src="Image/PHP-logo.svg.png" alt="PHP" class="logo"></a></td>
+        <td><a href="../../image/TP6/logoPHP.png" target="_blank"><img src="../../image/TP6/logoPHP.png" alt="PHP" class="logo"></a></td>
         <td>PHP</td>
         <td>Hypertext Preprocessor</td>
         <td>1995</td>
         <td><a href="https://www.php.net" target="_blank" class="site-web">php.net</a></td>
-        <td><code>&lt;?php echo "Hello, World!"; ?&gt;</code></td>
+        <td><code>&lt;? $x = 10; echo $x; ?> ?&gt;</code></td>
     </tr>
     <tr>
-        <td><a href="Image/jsp logo.png" target="_blank"><img src="Image/jsp logo.png" alt="JSP" class="logo"></a></td>
+        <td><a href="../../image/TP6/logoJSP.png" target="_blank"><img src="../../image/TP6/logoJSP.png" alt="JSP" class="logo"></a></td>
         <td>JSP</td>
         <td>Java Server Pages</td>
         <td>1999</td>
         <td><a href="https://www.oracle.com/java/technologies/jspt.html" target="_blank" class="site-web">oracle.com</a></td>
-        <td><code>&lt;% out.println("Hello, World!"); %&gt;</code></td>
+        <td><code>&lt;% <% int x = 10; out.println(x); %> %&gt;</code></td>
     </tr>
     <tr>
-        <td><a href="Image/logo asp.webp" target="_blank"><img src="Image/logo asp.webp" alt="ASP" class="logo"></a></td>
+        <td><a href="../../image/TP6/logoASP.png" target="_blank"><img src="../../image/TP6/logoASP.png" alt="ASP" class="logo"></a></td>
         <td>ASP</td>
         <td>Active Server Pages</td>
         <td>1996</td>
         <td><a href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" class="site-web">microsoft.com</a></td>
-        <td><code>&lt;% Response.Write("Hello, World!") %&gt;</code></td>
+        <td><code>&lt;% <% Dim x : x = 10 : Response.Write(x) %> %&gt;</code></td>
     </tr>
     <tr>
-        <td><a href="Image/ruby logo.png" target="_blank"><img src="Image/ruby logo.png" alt="Ruby" class="logo"></a></td>
+        <td><a href="../../image/TP6/logoRUBY.png" target="_blank"><img src="../../image/TP6/logoRUBY.png" alt="Ruby" class="logo"></a></td>
         <td>Ruby</td>
         <td>Ruby</td>
         <td>1995</td>
         <td><a href="https://www.ruby-lang.org" target="_blank" class="site-web">ruby-lang.org</a></td>
-        <td><code>puts "Hello, World!"</code></td>
+        <td><code>x = 10; puts x</code></td>
     </tr>
     <tr>
-        <td><a href="Image/logo perl.png" target="_blank"><img src="Image/logo perl.png" alt="Perl" class="logo"></a></td>
+        <td><a href="../../image/TP6/logoPERL.png" target="_blank"><img src="../../image/TP6/logoPERL.png" alt="Perl" class="logo"></a></td>
         <td>Perl</td>
         <td>Practical Extraction and Report Language</td>
         <td>1987</td>
         <td><a href="https://www.perl.org" target="_blank" class="site-web">perl.org</a></td>
-        <td><code>print "Hello, World!\n";</code></td>
+        <td><code>$x = 10; print $x;</code></td>
     </tr>
     <tr>
-        <td><a href="Image/python logo.png" target="_blank"><img src="Image/python logo.png" alt="Python" class="logo"></a></td>
+        <td><a href="../../image/TP6/logoPYTHON.png" target="_blank"><img src="../../image/TP6/logoPYTHON.png" alt="Python" class="logo"></a></td>
         <td>Python</td>
         <td>Python</td>
         <td>1991</td>
         <td><a href="https://www.python.org" target="_blank" class="site-web">python.org</a></td>
-        <td><code>print("Hello, World!")</code></td>
+        <td><code>x = 10; print(x)</code></td>
     </tr>
 </table>
 
 
-    <h1>Exercice 3 : Calendrier Avril 2024</h1>
+    <h1>Calendrier Avril 2024</h1>
      <table class="calendrier">
         <caption>Calendrier du mois d'Avril 2024</caption>
         <tr>
@@ -155,19 +152,5 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             <td>28</td><td>29</td><td>30</td>
         </tr>
     </table>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll(".logo").forEach(img => {
-                img.addEventListener("click", event => {
-                    window.open(event.target.src, "_blank");
-                });
-            });
-            
-            document.querySelectorAll(".site-web").forEach(link => {
-                link.setAttribute("title", "Cliquez pour visiter le site officiel");
-            });
-        });
-    </script>
-</body>
+  </body>
 </html>

@@ -15,7 +15,8 @@ body {
 table {
     width: 80%;
     margin: auto;
-    border-collapse: collapse;
+    border-collapse: separate;  /* Changer de collapse à separate pour permettre des marges */
+    border-spacing: 5px; /* Espacement entre les cellules */
 }
 
 table, th, td {
@@ -25,6 +26,16 @@ table, th, td {
 th, td {
     padding: 10px;
     text-align: center;
+    background-color: white; /* Assure-toi que les cellules ont un fond blanc pour voir l'effet de la marge */
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+table tr td {
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 .logo {
@@ -42,12 +53,12 @@ caption {
     margin-bottom: 10px;
 }
 
-/* Style général du tableau */
+
 .calendrier th:nth-child(1), .calendrier th:nth-child(2),
 .calendrier th:nth-child(3), .calendrier th:nth-child(4),
 .calendrier th:nth-child(5) {
-    background-color: green;
-    color: white;
+    background-color: #a8d08d;
+    color: black;
 }
 
 .calendrier th:nth-child(6), .calendrier th:nth-child(7),
@@ -56,7 +67,7 @@ caption {
     background-color: lightgreen;
 }
 
-/* Ajout du style pour les zones A, B et C */
+
 .zoneA {
     background-color: #f4c480;
          
@@ -89,5 +100,6 @@ caption {
 }
 .Vacances {
     background-color: lightgray ;
+    vertical-align: bottom;
     
 }
