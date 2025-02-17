@@ -3,10 +3,91 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
 */
 /* 
-    Created on : 13 févr. 2025, 13:21:08
-    Author     : UTI010
+    Created on : 13 févr. 2025, 18:01:21
+    Author     : enzor
 */
-.button-container {
-             display: flex;
-             justify-content: flex-end;
-        }     
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+
+.site-web:hover {
+    text-decoration: underline;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style général du tableau */
+.calendrier th:nth-child(1), .calendrier th:nth-child(2),
+.calendrier th:nth-child(3), .calendrier th:nth-child(4),
+.calendrier th:nth-child(5) {
+    background-color: green;
+    color: white;
+}
+
+.calendrier th:nth-child(6), .calendrier th:nth-child(7),
+.calendrier tr:nth-child(n+2) td:nth-child(6),
+.calendrier tr:nth-child(n+2) td:nth-child(7) {
+    background-color: lightgreen;
+}
+
+/* Ajout du style pour les zones A, B et C */
+.zoneA {
+    background-color: #f4c480;
+         
+}
+.zoneAtitle {
+    background-color: orange;
+    color : white;      
+}
+
+.zoneB {
+    background-color: #80a9f4;
+    
+}
+.zoneBtitle {
+    background-color: blue;
+    color : white;
+}
+
+.zoneC {
+    background-color: #a8d08d;
+}
+.zoneCtitle {
+    background-color: green;
+    color : white;
+}
+
+.Vacancestitle {
+    background-color: grey;
+    color : white;
+}
+.Vacances {
+    background-color: lightgray ;
+    
+}

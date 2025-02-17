@@ -5,32 +5,169 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Tp6 Les Tableaux</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../style/TP6/css_index_TP6.css"/>
     </head>
+    <header>
+        <h1><center>Tp6 Les Tableaux</center></h1>
+     <center><button onclick="window.location.href='../index.html'">Acceuil</button></center> 
+     <br>
+     <center><button onclick="window.history.back()">Retour</button></center>
+</header> 
+    
+    <link rel="stylesheet" href="../../style/css_TP6/css_index_TP6.css">
+    
     <body>
-        <h1>Bienvenue sur le TP6 !</h1><div class="button-container"><button onclick="window.location.href='../../index.html'">Retour</button><button onclick="window.location.href='../../index.html'">Accueil</button></div>
-        <h2>Exercice 1 : tableau</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <th rowspan="2">Vacances</th>
-                    <th>Zone A</th>
-                    <th>Zone B</th>
-                    <th>Zone C</th>
-                </tr>
-                <tr>
-                    <th>Prérentré des enseignants</th>
-                    <th>Académies : Besançon, Bordeaux, Clermont-Ferrand, Dijon, Grenoble, Limoges, Lyon, Poitiers</th>
-                    <th>Académies : Aix-Marseille, Amiens, Can, Lille, Nancy-Metz, Nantes, Nice, Orléans-Tours, Reims, Rennes, Rouen, Strasbourg</th>
-                    <th>Académies : Créteil, Montpellier, Paris, Toulouse, Versailles</th>
-                </tr>
-                <tr>
-                    <th colspan="3">Reprise des cours : Vendredi 1er septembre 2017</th>
-                </tr>
-            </tbody>
-        </table>
-    </body>
+    <h1>Exercice 1 : Tableau simple</h1>
+      <table>
+        <thead>
+            <tr>
+                <th class="Vacancestitle">Vacances</th>
+                <th class="zoneAtitle">Zone A</th>
+                <th class="zoneBtitle">Zone B</th>
+                <th class="zoneCtitle">Zone C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="1"class="Vacances"></th>
+                <td class="zoneA">Académies de Besançon, Bordeaux, Clermont-Ferrand, Dijon, Grenoble, Limoges, Lyon, Poitiers</td>
+                <td class="zoneB">Académies d'Aix-Marseille, Amiens, Lille, Nancy-Metz, Nantes, Nice, Normandie, Orléans-Tours, Reims, Rennes, Strasbourg</td>
+                <td class="zoneC">Académies de Créteil, Montpellier, Paris, Toulouse, Versailles</td>
+            </tr>
+            <tr>
+                <th class="Vacances">Prérentrée des enseignants</th>
+                <td colspan="3">Reprise des cours : vendredi 1er septembre 2017 </td>
+            </tr>
+            <tr>
+                <th class="Vacances">Rentrée scolaire des élèves</th>
+                <td colspan="3">Reprise des cours : lundi 4 septembre 2017</td>
+            </tr>
+            <tr>
+                <th class="Vacances">Vacances de la Toussaint</th>
+                <td colspan="3">Fin des cours : samedi 21 octobre 2017<br>Reprise des cours : lundi 6 novembre 2017</td>
+            </tr>
+            <tr>
+                <th class="Vacances">Vacances de Noël</th>
+                <td colspan="3">Fin des cours : samedi 23 décembre 2017<br>Reprise des cours : lundi 8 janvier 2018</td>
+            </tr>
+            <tr>
+                <th class="Vacances">Vacances d'hiver</th>
+                <td class="zoneA">Fin des cours : samedi 10 février 2018<br>Reprise des cours : lundi 26 février 2018</td>
+                <td class="zoneB">Fin des cours : samedi 24 février 2018<br>Reprise des cours : lundi 12 mars 2018</td>
+                <td class="zoneC">Fin des cours : samedi 17 février 2018<br>Reprise des cours : lundi 5 mars 2018</td>
+            </tr>
+            <tr>
+                <th class="Vacances">Vacances de printemps</th>
+                <td class="zoneA">Fin des cours : samedi 7 avril 2018<br>Reprise des cours : lundi 23 avril 2018</td>
+                <td class="zoneB">Fin des cours : samedi 21 avril 2018<br>Reprise des cours : lundi 7 mai 2018</td>
+                <td class="zoneC">Fin des cours : samedi 14 avril 2018<br>Reprise des cours : lundi 30 avril 2018</td>
+            </tr>
+            <tr>
+                <th class="Vacances">Vacances d'été</th>
+                <td colspan="3">Fin des cours : samedi 7 juillet 2018</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Exercice 2 : Langages de script</h1>
+    <table>
+    <caption>Tableau des langages de script</caption>
+    <tr>
+        <th>Logo</th>
+        <th>Non abrégé</th>
+        <th>Nom complet</th>
+        <th>Année de sortie</th>
+        <th>Site web</th>
+        <th>Exemple de code</th>
+    </tr>
+    <tr>
+        <td><a href="Image/PHP-logo.svg.png" target="_blank"><img src="Image/PHP-logo.svg.png" alt="PHP" class="logo"></a></td>
+        <td>PHP</td>
+        <td>Hypertext Preprocessor</td>
+        <td>1995</td>
+        <td><a href="https://www.php.net" target="_blank" class="site-web">php.net</a></td>
+        <td><code>&lt;?php echo "Hello, World!"; ?&gt;</code></td>
+    </tr>
+    <tr>
+        <td><a href="Image/jsp logo.png" target="_blank"><img src="Image/jsp logo.png" alt="JSP" class="logo"></a></td>
+        <td>JSP</td>
+        <td>Java Server Pages</td>
+        <td>1999</td>
+        <td><a href="https://www.oracle.com/java/technologies/jspt.html" target="_blank" class="site-web">oracle.com</a></td>
+        <td><code>&lt;% out.println("Hello, World!"); %&gt;</code></td>
+    </tr>
+    <tr>
+        <td><a href="Image/logo asp.webp" target="_blank"><img src="Image/logo asp.webp" alt="ASP" class="logo"></a></td>
+        <td>ASP</td>
+        <td>Active Server Pages</td>
+        <td>1996</td>
+        <td><a href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" class="site-web">microsoft.com</a></td>
+        <td><code>&lt;% Response.Write("Hello, World!") %&gt;</code></td>
+    </tr>
+    <tr>
+        <td><a href="Image/ruby logo.png" target="_blank"><img src="Image/ruby logo.png" alt="Ruby" class="logo"></a></td>
+        <td>Ruby</td>
+        <td>Ruby</td>
+        <td>1995</td>
+        <td><a href="https://www.ruby-lang.org" target="_blank" class="site-web">ruby-lang.org</a></td>
+        <td><code>puts "Hello, World!"</code></td>
+    </tr>
+    <tr>
+        <td><a href="Image/logo perl.png" target="_blank"><img src="Image/logo perl.png" alt="Perl" class="logo"></a></td>
+        <td>Perl</td>
+        <td>Practical Extraction and Report Language</td>
+        <td>1987</td>
+        <td><a href="https://www.perl.org" target="_blank" class="site-web">perl.org</a></td>
+        <td><code>print "Hello, World!\n";</code></td>
+    </tr>
+    <tr>
+        <td><a href="Image/python logo.png" target="_blank"><img src="Image/python logo.png" alt="Python" class="logo"></a></td>
+        <td>Python</td>
+        <td>Python</td>
+        <td>1991</td>
+        <td><a href="https://www.python.org" target="_blank" class="site-web">python.org</a></td>
+        <td><code>print("Hello, World!")</code></td>
+    </tr>
+</table>
+
+
+    <h1>Exercice 3 : Calendrier Avril 2024</h1>
+     <table class="calendrier">
+        <caption>Calendrier du mois d'Avril 2024</caption>
+        <tr>
+            <th>Lu</th><th>Ma</th><th>Me</th><th>Je</th><th>Ve</th><th>Sa</th><th>Di</th>
+        </tr>
+        <tr>
+            <td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+        </tr>
+        <tr>
+            <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+        </tr>
+        <tr>
+            <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+        </tr>
+        <tr>
+            <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+        </tr>
+        <tr>
+            <td>28</td><td>29</td><td>30</td>
+        </tr>
+    </table>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".logo").forEach(img => {
+                img.addEventListener("click", event => {
+                    window.open(event.target.src, "_blank");
+                });
+            });
+            
+            document.querySelectorAll(".site-web").forEach(link => {
+                link.setAttribute("title", "Cliquez pour visiter le site officiel");
+            });
+        });
+    </script>
+</body>
 </html>
