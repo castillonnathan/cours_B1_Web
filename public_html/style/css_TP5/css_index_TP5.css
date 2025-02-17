@@ -7,21 +7,31 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : UTI010
 */
         .title {
-            align-content: flex-end;
-        }
+    display: flex;
+    justify-content: space-between; /* Équilibre entre le titre et les boutons */
+    align-items: center;
+    padding: 15px 20px;
+}
+
+        
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding-top: 50px; /* Décalage pour ne pas que le jeu soit caché par la bannière */
+}
 
         .memory-game {
-            display: grid;
-            grid-template-columns: repeat(5, 80px);
-            grid-gap: 10px;
-        }
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
 
         .card {
             width: 80px;
@@ -71,6 +81,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
             transform: rotateY(180deg);
         }
         .button-container {
-             display: flex;
-             justify-content: flex-end;
-        }     
+    display: flex;
+    gap: 10px; /* Espacement entre les boutons */
+}
