@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <button onclick="window.location.href='../../index.html'">Acceuil</button>
+    <h1>Calculer la surface d'un rectangle</h1>
+    <button onclick="calculerSurface()">Calculer</button>
+
+    <script>
+        function calculerSurface() {
+            let X = prompt("Entrez la longueur du rectangle (X) :");
+            let Y = prompt("Entrez la largeur du rectangle (Y) :");
+
+            // Calculer la surface
+            let surface = X * Y;
+
+            console.log("La surface du rectangle est : " + surface);
+            alert("La surface du rectangle est : " + surface);
+        }
+    </script>
+    </body>
+</html>
