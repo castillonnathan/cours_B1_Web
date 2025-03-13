@@ -11,8 +11,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
     </head>
     <body>
     <button onclick="window.location.href='../../index.html'">Acceuil</button>
-    <h1>Calculer la surface d'un rectangle</h1>
+    <h1>exo 1 : Calculer la surface d'un rectangle</h1>
     <button onclick="calculerSurface()">Calculer</button>
+    
+    <h1>exo 2 : Calculer la surface d'un rectangle</h1>
+    <button onclick="calculerSurface2()">Calculer</button>
 
     <script>
         function calculerSurface() {
@@ -26,5 +29,24 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             alert("La surface du rectangle est : " + surface);
         }
     </script>
+    <script>
+        function calculerSurface() {
+            let X, Y;
+
+            // Demander les valeurs et confirmation dans une boucle
+            do {
+                X = prompt("Entrez la longueur du rectangle (X) :");
+                Y = prompt("Entrez la largeur du rectangle (Y) :");
+            } while (!confirm("Utiliser Longueur = " + X + ", Largeur = " + Y + "?"));
+
+            // Calcul et affichage du résultat
+            let surface = X * Y;
+            console.log("Surface : " + surface);
+            alert("Surface : " + surface);
+        }
+    </script>
+    <script>
+        
+    </script>    
     </body>
 </html>
