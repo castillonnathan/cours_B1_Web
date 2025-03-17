@@ -11,11 +11,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
     </head>
     <body>
     <button onclick="window.location.href='../../index.html'">Acceuil</button>
-    <h1>exo 1 : Calculer la surface d'un rectangle</h1>
+    <h1>exo 1 :</h1>
     <button onclick="calculerSurface()">Calculer</button>
     
-    <h1>exo 2 : Calculer la surface d'un rectangle</h1>
+    <h1>exo 2 :</h1>
     <button onclick="calculerSurface2()">Calculer</button>
+    
+    <h1>exo 3 :</h1>
+    <button onclick="calculeSurfaceverif()">Calculer</button>
 
     <script>
         function calculerSurface() {
@@ -46,7 +49,25 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         }
     </script>
     <script>
-        
+        function calculeSurfaceverif() {
+            let X, Y;
+            do {
+                X = prompt("Entrez la longueur du rectangle (X) :");
+                Y = prompt("Entrer la largeur du rectangle (Y) :");
+            } while (isNaN(X) || isNaN(Y)) {
+                if (isNaN(X) || X < 0) {
+                    X = prompt("Entrez à nouveau la longueur du rectangle (X) :");
+                    alert("Veuillez rentrer un chiffre / nombre positif!");
+            } else if (isNaN(Y) || Y < 0) {
+                    Y = prompt("Entrer à nouveau la largeur du rectangle (Y) :");
+                    alert("Veuillez rentrer un chiffre / nombre positif!");
+            }
+            } while (!confirm("Utiliser la longueur = " + X + "et la largeur = " + Y + "?"));
+            
+            let surface = X * Y;
+            console.log("Surface = " + surface);
+            alert("Surface = " + surface);
+        }
     </script>    
     </body>
 </html>
