@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.devis-container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #56644F;
+}
+
+h1 span {
+    font-weight: normal;
+}
+
+.devis-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section img {
+    width: 80px;
+}
+
+.details p {
+    text-align: right;
+    font-size: 14px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-left, .contact-right {
+    width: 45%;
+}
+
+.contact h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #E8EDE2;
+    font-weight: bold;
+}
+
+.total-section {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #56644F;
+}
+
+.terms {
+    margin-top: 20px;
+}
+
+.terms h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.terms p {
+    font-size: 14px;
+    color: #333;
+}
+
+.signature {
+    margin-top: 40px;
+    text-align: right;
+    font-weight: bold;
+}
