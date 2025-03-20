@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.zone-haut {
+    background-color: red;
+    color: black;
+    text-align: left;
+    padding: 30px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    height: 90vh;
+}
+
+.zone-gauche {
+    background-color: blue;
+    color: black;
+    width: 20%;
+    padding: 10px;
+}
+
+.zone-milieu {
+    background-color: green;
+    color: black;
+    width: 80%;
+    padding: 10px;
+}
+.zone-droite {
+    background-color: #5b3c11;
+    color: black;
+    width: 20%;
+    padding: 10px;
+}
