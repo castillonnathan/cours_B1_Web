@@ -1,0 +1,65 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.zone-haut, .zone-bas {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-grow: 1;
+}
+
+.boite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.rouge {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+    color: black;
+}
+
+.verte {
+    background-color: green;
+}
+
+.rouge-fonce {
+    background-color: darkred;
+}
+
+.zone-bas {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}

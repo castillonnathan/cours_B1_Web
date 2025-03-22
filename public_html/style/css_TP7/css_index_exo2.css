@@ -18,7 +18,8 @@ body {
 }
 
 .zone-gauche,
-.zone-milieu {
+.zone-milieu,
+.zone-droite {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -35,7 +36,13 @@ body {
 .zone-milieu {
     background-color: green;
     color: black;
-    width: 80%;
+    width: 60%;
     left: 20%;
 }
 
+.zone-droite {
+    background-color: #5b3c11;
+    color: black;
+    width: 20%;
+    right: 0;
+}

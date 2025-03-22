@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.zone-haut, .zone-bas {
+    background-color: #4b9b8a;
+    color: black;
+    padding: 10px;
+}
+
+.zone-haut {
+    height: 10vh;
+}
+
+.zone-menu {
+    background-color: #85489d;
+    color: black;
+    padding: 10px;
+    height: 5vh;
+}
+
+.zone-milieu-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.zone-milieu {
+    background-color: #d6a31d;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.zone-bas {
+    height: 5vh;
+}
