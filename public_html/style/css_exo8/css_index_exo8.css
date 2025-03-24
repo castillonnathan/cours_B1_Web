@@ -1,3 +1,4 @@
+/* Styles pour l'écran */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -42,4 +43,92 @@ button:hover {
 
 .hidden {
     display: none;
+}
+
+.devis-container {
+    width: 100%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.devis-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.devis-header h1 {
+    color: #333;
+}
+
+.devis-info {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.client-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.client-details, .concorda-details {
+    width: 45%;
+}
+
+.devis-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.devis-table th, .devis-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.devis-table th {
+    background-color: #f4f4f4;
+}
+
+.total-info {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.total-info p {
+    margin: 5px 0;
+}
+
+.total-info p:last-child {
+    font-weight: bold;
+    color: #333;
+}
+
+.terms {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Styles pour l'impression */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #devis, #devis * {
+        visibility: visible;
+    }
+    #devis {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        padding: 20px;
+    }
 }
