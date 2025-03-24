@@ -1,104 +1,45 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #f8f8f8;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-.devis-container {
-    max-width: 700px;
-    margin: auto;
+.container {
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-size: 32px;
-    color: #56644F;
 }
 
-h1 span {
-    font-weight: normal;
-}
-
-.devis-info {
+form {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
 
-.logo-section img {
-    width: 80px;
+label {
+    margin-top: 10px;
 }
 
-.details p {
-    text-align: right;
-    font-size: 14px;
-}
-
-.contact {
-    display: flex;
-    justify-content: space-between;
+button {
     margin-top: 20px;
-}
-
-.contact-left, .contact-right {
-    width: 45%;
-}
-
-.contact h3 {
-    margin: 0;
-    font-size: 16px;
-    color: #333;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    border: 1px solid #ccc;
     padding: 10px;
-    text-align: left;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-th {
-    background-color: #E8EDE2;
-    font-weight: bold;
+button:hover {
+    background-color: #0056b3;
 }
 
-.total-section {
-    margin-top: 20px;
-    text-align: right;
-}
-
-.total {
-    font-size: 18px;
-    font-weight: bold;
-    color: #56644F;
-}
-
-.terms {
-    margin-top: 20px;
-}
-
-.terms h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.terms p {
-    font-size: 14px;
-    color: #333;
-}
-
-.signature {
-    margin-top: 40px;
-    text-align: right;
-    font-weight: bold;
+.hidden {
+    display: none;
 }
