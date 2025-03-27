@@ -19,6 +19,12 @@
 
                 <label for="epaisseur">Épaisseur (cm):</label>
                 <input type="number" id="epaisseur" name="epaisseur" min="15" max="35" required><br>
+                
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br>
+                
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom"><br>
 
                 <button type="button" onclick="calculerEtAfficherDevis()">Obtenir le Devis</button>
             </form>
@@ -77,17 +83,12 @@
                     </tbody>
                 </table>
                 <div class="total-info">
-                    <p>Sous total: <span id="sousTotal"></span>€</p>
+                    <p>Sous-total: <span id="sousTotal"></span>€</p>
                     <p>TVA (20%): <span id="tva"></span>€</p>
-                    <p>TOTAL: <span id="total"></span>€</p>
+                    <p><strong>TOTAL: <span id="total"></span>€</strong></p>
                 </div>
-                <div class="terms">
-                    <p>Termes et conditions</p>
-                    <p>Tous les fichiers sources et clones d'auteur secret doivent être remis au client à la fin du projet.</p>
-                    <p>Les fichiers seront envoyés au format numérique haute résolution.</p>
-                    <p>Signature du client</p>
-                    <p>30% d'acompte à verser à la signature du contrat. Le reste à la fin des travaux finaux.</p>
-                </div>
+
+                <!-- Bouton d'impression ajouté proprement -->
                 <button onclick="imprimerDevis()">Imprimer le Devis</button>
             </div>
         </div>
