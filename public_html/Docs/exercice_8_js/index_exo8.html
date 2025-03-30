@@ -31,48 +31,46 @@
         </div>
 
         <div id="devis" class="hidden">
-            <div class="devis-container">
-                <div class="devis-header">
-                    <h1>DEVIS N°1</h1>
-                    <div class="devis-info">
-                        <p>Date du devis: <span id="dateDevis"></span></p>
-                        <p>Validité du devis: 1 mois</p>
-                    </div>
+            <div class="devis-header">
+                <h1>DEVIS N°1</h1>
+                <div class="devis-info">
+                    <p>Date du devis: <span id="dateDevis"></span></p>
+                    <p>Validité du devis: 1 mois</p>
                 </div>
-                <div class="client-info">
-                    <div class="client-details">
-                        <p id="clientNomPrenom"></p>
-                        <p id="clientContact"></p>
-                        <p id="clientEmail"></p>
-                        <p id="clientAdresse"></p>
-                    </div>
-                    <div class="concorda-details">
-                        <p>À L'ATTENTION DE CONCORDA</p>
-                        <p>123-456-7890</p>
-                        <p>Valence 26000</p>
-                    </div>
-                </div>
-                <table class="devis-table">
-                    <thead>
-                        <tr>
-                            <th>DESCRIPTION</th>
-                            <th>PRIX</th>
-                            <th>QUANTITÉ</th>
-                            <th>TOTAL</th>
-                        </tr>
-                    </thead>
-                    <tbody id="materiauxListe">
-                        <!-- Dynamically populated with JavaScript -->
-                    </tbody>
-                </table>
-                <div class="total-info">
-                    <p>Sous-total: <span id="sousTotal"></span>€</p>
-                    <p>TVA (20%): <span id="tva"></span>€</p>
-                    <p><strong>TOTAL: <span id="total"></span>€</strong></p>
-                </div>
-
-                <button onclick="imprimerDevis()">Imprimer le Devis</button>
             </div>
+            <div class="client-info">
+                <div class="client-details">
+                    <p id="clientNomPrenom"></p>
+                    <p id="clientContact"></p>
+                    <p id="clientEmail"></p>
+                    <p id="clientAdresse"></p>
+                </div>
+                <div class="concorda-details">
+                    <p>À L'ATTENTION DE CONCORDA</p>
+                    <p>123-456-7890</p>
+                    <p>Valence 26000</p>
+                </div>
+            </div>
+            <table class="devis-table">
+                <thead>
+                    <tr>
+                        <th>DESCRIPTION</th>
+                        <th>PRIX</th>
+                        <th>QUANTITÉ</th>
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody id="materiauxListe">
+                    <!-- Dynamically populated with JavaScript -->
+                </tbody>
+            </table>
+            <div class="total-info">
+                <p>Sous-total: <span id="sousTotal"></span>€</p>
+                <p>TVA (20%): <span id="tva"></span>€</p>
+                <p><strong>TOTAL: <span id="total"></span>€</strong></p>
+            </div>
+
+            <button onclick="window.print()">Imprimer cette page</button>
         </div>
     </div>
     <script src="exercice_8.js"></script>

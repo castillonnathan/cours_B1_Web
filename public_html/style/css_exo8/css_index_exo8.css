@@ -16,7 +16,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
+    max-width: 800px; 
 
 form {
     display: flex;
@@ -46,12 +46,15 @@ button:hover {
 }
 
 .devis-container {
-    width: 100%;
-    margin: auto;
+    width: 90%; /* Augmentez la largeur selon vos besoins */
+    max-width: 1000px; /* Limite la largeur maximale */
+    margin: auto; /* Centre le devis */
     background: white;
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Ajoute des coins arrondis */
+    overflow: auto; /* Permet le défilement si le contenu dépasse */
 }
 
 .devis-header {
@@ -127,8 +130,12 @@ button:hover {
         left: 0;
         top: 0;
         width: 100%;
-        height: 100%;
+        height: auto; /* Allow height to adjust */
         box-shadow: none;
         padding: 20px;
+    }
+    /* S'assurer que le devis est caché au départ */
+    .hidden {
+        display: none;
     }
 }
