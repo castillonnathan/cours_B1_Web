@@ -116,26 +116,3 @@ button:hover {
     font-size: 0.9em;
     color: #666;
 }
-
-/* Styles pour l'impression */
-@media print {
-    body * {
-        visibility: hidden;
-    }
-    #devis, #devis * {
-        visibility: visible;
-    }
-    #devis {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: auto; /* Allow height to adjust */
-        box-shadow: none;
-        padding: 20px;
-    }
-    /* S'assurer que le devis est caché au départ */
-    .hidden {
-        display: none;
-    }
-}
