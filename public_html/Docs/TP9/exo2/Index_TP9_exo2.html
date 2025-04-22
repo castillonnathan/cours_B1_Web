@@ -2,32 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../style/css_TP9/css_index_TP9_exo2.css"/>
     <title>Formulaire de Visite - Journée Portes Ouvertes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        table, th, td {
-            border: 1px solid #444;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        label, select, input {
-            display: block;
-            margin: 10px 0;
-        }
-        .form-container {
-            max-width: 400px;
-        }
-    </style>
 </head>
 <body>
 
@@ -52,6 +28,8 @@
 
             <button type="submit">Valider</button>
         </form>
+
+        <button id="export">Enregistrer la liste en .txt</button>
     </div>
 
     <h2>Liste des visiteurs :</h2>
@@ -67,32 +45,6 @@
             <!-- Les visiteurs seront ajoutés ici -->
         </tbody>
     </table>
-
-    <script>
-        const form = document.getElementById('formulaire');
-        const tableBody = document.querySelector('#tableVisiteurs tbody');
-
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const nom = document.getElementById('nom').value.trim();
-            const prenom = document.getElementById('prenom').value.trim();
-            const etude = document.getElementById('etude').value;
-
-            if (nom && prenom && etude) {
-                const newRow = document.createElement('tr');
-                newRow.innerHTML = `
-                    <td>${nom}</td>
-                    <td>${prenom}</td>
-                    <td>${etude}</td>
-                `;
-                tableBody.appendChild(newRow);
-
-                // Réinitialiser le formulaire
-                form.reset();
-            }
-        });
-    </script>
-
+  <script src="js_TP9_exo2.js"></script>
 </body>
 </html>

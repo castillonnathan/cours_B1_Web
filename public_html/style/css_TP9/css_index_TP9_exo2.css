@@ -1,0 +1,36 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 22 avr. 2025, 18:02:48
+    Author     : hosay
+*/
+body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #444;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        label, select, input {
+            display: block;
+            margin: 10px 0;
+        }
+        .form-container {
+            max-width: 400px;
+        }
+        #export {
+            margin-top: 15px;
+            padding: 8px 16px;
+            font-weight: bold;
+        }
