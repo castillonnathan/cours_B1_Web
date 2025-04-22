@@ -1,26 +1,29 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../style/css_TP9/css_index_TP9.css">
-    <title>Page avec Popup de Définitions</title>
-</head>
-<body>
-
-    <div id="lorem-ipsum">
-        <p>
-            Lorem ipsum dolor sit amet, <span class="highlight" data-word="PHP">PHP</span> consectetur adipiscing elit. 
-            <span class="highlight" data-word="JavaScript">JavaScript</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            <span class="highlight" data-word="CSS">CSS</span> sit amet, consectetur adipiscing elit.
-        </p>
-    </div>
-
-    <div class="popup" id="popup">
-        <h3 id="popup-title">Titre</h3>
-        <p id="popup-text">Explication ici...</p>
-        <img id="popup-image" src="" alt="" style="display: none;">
-    </div>
-    <script src="js_TP9.js"></script>
-</body>
+<html>
+    <head>
+        <title>Bienvenue sur mon site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style/index_main/css_index_main.css"/>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">Projet B1 Web</a>
+                </div>
+                <ul class="menu">
+                    <li><a href="Docs/accueil/a_propos.html">À propos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <center><button class="button" onclick="window.location.href='exo1/Index_TP9_exo1.html'">Exercice 1</button></center>
+        <br>
+        <center><button class="button2" onclick="window.location.href='Docs/TP9/exo2/Index_TP9_exo2.html'">Exercice 2</button></center>
+        <br>
+        <center><button class="button" onclick="window.location.href='Docs/TP9/exo3/Index_TP9_exo3.html'">Exercice 3</button></center>
+        <br>
+        <center><button class="button2" onclick="window.location.href='Docs/TP9/exo4/Index_TP9_exo4.html'">Exercice 4</button></center>
+        <br>
+    </body>
 </html>

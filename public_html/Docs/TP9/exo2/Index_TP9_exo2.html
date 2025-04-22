@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de Visite - Journée Portes Ouvertes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #444;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        label, select, input {
+            display: block;
+            margin: 10px 0;
+        }
+        .form-container {
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulaire de Visite - Journée Portes Ouvertes</h1>
+
+    <div class="form-container">
+        <form id="formulaire">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="etude">Études suivies :</label>
+            <select id="etude" name="etude" required>
+                <option value="">--Choisir une option--</option>
+                <option value="Bac Pro">Bac Pro</option>
+                <option value="STI">STI</option>
+                <option value="STMG">STMG</option>
+                <option value="Général">Général</option>
+            </select>
+
+            <button type="submit">Valider</button>
+        </form>
+    </div>
+
+    <h2>Liste des visiteurs :</h2>
+    <table id="tableVisiteurs">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Étude suivie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Les visiteurs seront ajoutés ici -->
+        </tbody>
+    </table>
+
+    <script>
+        const form = document.getElementById('formulaire');
+        const tableBody = document.querySelector('#tableVisiteurs tbody');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nom = document.getElementById('nom').value.trim();
+            const prenom = document.getElementById('prenom').value.trim();
+            const etude = document.getElementById('etude').value;
+
+            if (nom && prenom && etude) {
+                const newRow = document.createElement('tr');
+                newRow.innerHTML = `
+                    <td>${nom}</td>
+                    <td>${prenom}</td>
+                    <td>${etude}</td>
+                `;
+                tableBody.appendChild(newRow);
+
+                // Réinitialiser le formulaire
+                form.reset();
+            }
+        });
+    </script>
+
+</body>
+</html>
