@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../../style/css_TP9/css_index_TP9_exo4.css"/>
+  <title>Calendrier Généré</title>
+</head>
+<body>
+
+<h2 style="text-align:center;">Calendrier personnalisé</h2>
+
+<!-- Choix de style -->
+<div style="text-align:center;">
+  <label>Taille :
+    <select id="taille">
+      <option value="petit">Petit</option>
+      <option value="moyen" selected>Moyen</option>
+      <option value="grand">Grand</option>
+    </select>
+  </label>
+
+  <label>Couleur de fond :
+    <input type="color" id="couleurFond" value="#e0f7fa">
+  </label>
+
+  <label>Couleur du texte :
+    <input type="color" id="couleurTexte" value="#000000">
+  </label>
+
+  <button onclick="generer()">Générer un exemple</button>
+</div>
+
+<hr>
+<div style="text-align:center; margin-top: 20px;">
+  <h3>Entrer vos paramètres :</h3>
+  <label>Jour de début (1=lundi, ..., 7=dimanche) :
+    <input type="number" id="inputJour" min="1" max="7" value="1">
+  </label>
+
+  <label>Mois (1-12) :
+    <input type="number" id="inputMois" min="1" max="12" value="4">
+  </label>
+
+  <label>Année :
+    <input type="number" id="inputAnnee" value="2024">
+  </label>
+
+  <button onclick="genererDepuisSaisie()">Générer depuis vos infos</button>
+</div>
+
+<div id="resultat"></div>
+
+<script src="js_TP9_exo3.js"></script>
+
+</body>
+</html>
